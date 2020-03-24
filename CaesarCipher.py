@@ -1,8 +1,7 @@
 print('----------------------------------')
+print('|                                |')
 print('|          Caesar Cipher         |')
 print('|                                |')
-print('|         @Made By Drizz         |')
-print('|   https://github.com/Drizz159  |')
 print('----------------------------------')
 
 # Alphabet
