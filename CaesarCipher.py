@@ -7,6 +7,7 @@ print('----------------------------------')
 # Alphabet
 alphabet = ' abcdefghijklmnopqrstuvwxyz'
 
+# Function that encrypts a given string
 def encryption():
 	inp = input('\nEnter your Text: ').lower()
 	key = int(input('Enter your Key value: '))
@@ -23,6 +24,7 @@ def encryption():
 	print('|' + str(output) + '|')
 	print('-' + (len(output) * '-') + '-')
 
+# Function that decrypts encryptet string using key
 def decryption_with_key():
     inp = input("\nEnter your Encrypted String: ").lower()
     key = int(input("Enter Your Key: "))
@@ -38,6 +40,7 @@ def decryption_with_key():
     print('|' + str(output) + '|')
     print('-' + (len(output) * '-') + '-')
 
+# Function that decrypts encryptet without a key
 def decryption_without_key():
 	inp = input('\nEnter the Encrypted letters: ').lower()
 	# Mostly used letters in alphabets
@@ -88,18 +91,16 @@ def frequency_analysis():
 
 while True:
     try:
-        main_input = int(input('\n(1) for Encryption\n(2) for Decryption With Key\n(3) for Decryption Without Key\n(4) for Frequency Analysis\n\nWitch one you want to chose: '))
+        main_input = int(input('\n(1) for Encryption\n(2) for Decryption With Key\n(3) for Decryption Without Key\n(4) for Frequency Analysis\n(5) to exit this program\n\nWhich one you want to chose: '))
         if main_input == 1:
             encryption()
-            break
         elif main_input == 2:
             decryption_with_key()
-            break
         elif main_input == 3:
             decryption_without_key()
-            break
         elif main_input == 4:
             frequency_analysis()
+        elif main_input == 5:
             break
         else:
             print("\nEnter a valid number please !")
